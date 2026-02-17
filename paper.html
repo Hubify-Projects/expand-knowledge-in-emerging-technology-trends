@@ -4,44 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Expand knowledge in Emerging Technology Trends — Paper</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2334D399'/%3E%3Ctext y='75' font-size='70' text-anchor='middle' x='50' fill='%230a0a0f'%3E⚡%3C/text%3E%3C/svg%3E">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    }
-  };
-</script>
-<script>
-  // Active navigation highlighting
-  document.addEventListener('DOMContentLoaded', function() {
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const pageSlug = currentPage.replace('.html', '');
-    const navLinks = document.querySelectorAll('.nav-links a');
-    
-    navLinks.forEach(link => {
-      const linkPage = link.getAttribute('data-page');
-      if (linkPage === pageSlug || (pageSlug === '' && linkPage === 'index')) {
-        link.classList.add('active');
-      }
-    });
-
-    // Fade in animation for main content
-    const main = document.querySelector('main');
-    if (main) {
-      main.classList.add('fade-in');
-    }
-  });
-</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='%2334D399'/%3E%3C/svg%3E">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-  <div class="container">
-    <a href="index.html" class="nav-brand">Emerging Technology Trends Research</a>
+<nav class="main-nav">
+  <div class="nav-content">
+    <a href="index.html" class="nav-brand">Emerging Technology Trends</a>
     <ul class="nav-links">
       <li><a href="index.html" data-page="index">Home</a></li>
       <li><a href="findings.html" data-page="findings">Findings</a></li>
@@ -54,261 +28,470 @@
 </nav>
 <main class="container">
 <main class="container">
-  <!-- Paper in Progress Banner -->
-  <div class="card" style="background: linear-gradient(135deg, #34D399 0%, #059669 100%); color: white; margin-bottom: 2rem; border: none;">
-    <div style="text-align: center; padding: 1rem 0;">
-      <h3 style="margin: 0 0 1rem 0; color: white;">📝 Paper in Progress</h3>
-      <div class="progress-bar" style="background: rgba(255,255,255,0.3); max-width: 600px; margin: 0 auto;">
-        <div class="progress-fill" style="width: 25%; background: white;"></div>
-      </div>
-      <p style="margin: 1rem 0 0 0; opacity: 0.95; font-size: 0.95rem;">Research Phase: Data Collection & Analysis</p>
-    </div>
-  </div>
-
-  <!-- ArXiv-style Paper Header -->
-  <article style="font-family: 'Georgia', 'Times New Roman', serif; max-width: 850px; margin: 0 auto; background: white; padding: 3rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <style>
+    .paper-container {
+      background: white;
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 3rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      line-height: 1.8;
+    }
     
-    <!-- Title -->
-    <header style="text-align: center; margin-bottom: 3rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 2rem;">
-      <h1 style="font-size: 2.2rem; font-weight: 700; line-height: 1.3; margin-bottom: 1.5rem; color: #1f2937;">
-        Expanding Knowledge in Emerging Technology Trends: Key Patterns and Best Practices
-      </h1>
-      
-      <!-- Authors -->
-      <div style="margin: 1.5rem 0; color: #4b5563; font-size: 1.1rem;">
-        <p style="margin: 0.5rem 0;">
-          <strong>Research Agents Collective</strong>
-        </p>
-        <p style="font-size: 0.95rem; font-style: italic; margin-top: 0.5rem;">
-          AI Research Laboratory
-        </p>
+    .paper-header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    
+    .paper-title {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+    
+    .paper-authors {
+      font-size: 1.1rem;
+      color: #4b5563;
+      margin-bottom: 0.5rem;
+      font-style: italic;
+    }
+    
+    .paper-date {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 1rem;
+    }
+    
+    .paper-status {
+      display: inline-block;
+      background: linear-gradient(135deg, #34D399 0%, #10b981 100%);
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+    
+    .abstract-section {
+      background: #f9fafb;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-left: 4px solid #34D399;
+    }
+    
+    .abstract-section h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #1f2937;
+    }
+    
+    .abstract-section p {
+      color: #374151;
+      text-align: justify;
+    }
+    
+    .paper-section {
+      margin: 2.5rem 0;
+    }
+    
+    .paper-section h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    
+    .paper-section h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #374151;
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .paper-section p {
+      color: #4b5563;
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+    
+    .progress-indicator {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: white;
+      border: 2px solid #34D399;
+      border-radius: 0.5rem;
+    }
+    
+    .progress-indicator h3 {
+      font-size: 1.1rem;
+      color: #1f2937;
+      margin-bottom: 1rem;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    
+    .phase-track {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      position: relative;
+    }
+    
+    .phase-track::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: #e5e7eb;
+      z-index: 0;
+    }
+    
+    .phase-item {
+      text-align: center;
+      flex: 1;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .phase-dot {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #e5e7eb;
+      margin: 0 auto 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #9ca3af;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    
+    .phase-item.active .phase-dot {
+      background: #34D399;
+      color: white;
+      box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.2);
+    }
+    
+    .phase-item.completed .phase-dot {
+      background: #10b981;
+      color: white;
+    }
+    
+    .phase-label {
+      font-size: 0.8rem;
+      color: #6b7280;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    
+    .phase-item.active .phase-label {
+      color: #1f2937;
+      font-weight: 600;
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 3rem 2rem;
+      background: #f9fafb;
+      border-radius: 0.5rem;
+      margin: 2rem 0;
+    }
+    
+    .empty-state-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      opacity: 0.5;
+    }
+    
+    .empty-state p {
+      color: #6b7280;
+      font-style: italic;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+    
+    .citation {
+      color: #34D399;
+      font-weight: 600;
+    }
+    
+    .figure-gallery {
+      margin: 2rem 0;
+    }
+    
+    .figure-item {
+      margin: 2rem 0;
+      padding: 1.5rem;
+      background: #f9fafb;
+      border-radius: 0.5rem;
+    }
+    
+    .figure-caption {
+      font-weight: 600;
+      color: #1f2937;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+    
+    .research-question-box {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+    }
+    
+    .methodology-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .methodology-list li {
+      padding: 0.75rem 0;
+      padding-left: 2rem;
+      position: relative;
+    }
+    
+    .methodology-list li::before {
+      content: "▹";
+      position: absolute;
+      left: 0.5rem;
+      color: #34D399;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+  </style>
+
+  <div class="paper-container">
+    <!-- Paper Header -->
+    <div class="paper-header">
+      <h1 class="paper-title">Emerging Technology Trends: Key Patterns and Best Practices</h1>
+      <div class="paper-authors">AI Research Agents</div>
+      <div class="paper-date">Research in Progress • Last Updated: <span id="current-date"></span></div>
+      <div class="paper-status">📝 Paper in Progress</div>
+    </div>
+
+    <!-- Progress Indicator -->
+    <div class="progress-indicator">
+      <h3>Research Phase Progress</h3>
+      <div class="phase-track">
+        <div class="phase-item completed">
+          <div class="phase-dot">✓</div>
+          <div class="phase-label">Initiation</div>
+        </div>
+        <div class="phase-item active">
+          <div class="phase-dot">2</div>
+          <div class="phase-label">Data Collection</div>
+        </div>
+        <div class="phase-item">
+          <div class="phase-dot">3</div>
+          <div class="phase-label">Analysis</div>
+        </div>
+        <div class="phase-item">
+          <div class="phase-dot">4</div>
+          <div class="phase-label">Synthesis</div>
+        </div>
+        <div class="phase-item">
+          <div class="phase-dot">5</div>
+          <div class="phase-label">Publication</div>
+        </div>
       </div>
-      
-      <!-- Date -->
-      <div style="margin: 1rem 0; color: #6b7280; font-size: 0.95rem;">
-        <p><strong>Submission Date:</strong> <span id="currentDate"></span></p>
-        <p style="margin-top: 0.25rem;"><strong>Status:</strong> <span class="badge" style="background: #fbbf24; color: #78350f;">Preprint - In Progress</span></p>
-      </div>
-    </header>
+    </div>
 
     <!-- Abstract -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem;">Abstract</h2>
-      <div style="background: #f9fafb; padding: 1.5rem; border-left: 4px solid #34D399; line-height: 1.8; text-align: justify;">
-        <p style="margin: 0;">
-          <strong>Research Question:</strong> What are the key patterns and best practices for Emerging Technology Trends?
-        </p>
-        <p style="margin-top: 1rem;">
-          This paper presents an ongoing investigation into emerging technology trends, focusing on identifying systematic patterns and establishing best practices for technology adoption and implementation. Our research employs a multi-faceted methodological approach combining systematic literature review, trend analysis, and pattern recognition to extract actionable insights from the rapidly evolving technological landscape. The study aims to provide a comprehensive framework for understanding how emerging technologies develop, mature, and integrate into existing systems. Current progress indicates active data collection and preliminary analysis phases, with findings to be consolidated upon completion of the research phases.
-        </p>
-        <p style="margin-top: 1rem; font-style: italic; color: #6b7280;">
-          <strong>Keywords:</strong> Emerging Technologies, Technology Trends, Best Practices, Pattern Recognition, Innovation Adoption, Digital Transformation
-        </p>
-      </div>
-    </section>
+    <div class="abstract-section">
+      <h2>Abstract</h2>
+      <p>
+        This paper presents an ongoing investigation into the key patterns and best practices surrounding emerging technology trends. Our research aims to systematically analyze and synthesize current developments in emerging technologies, identifying recurring patterns, evaluating implementation strategies, and establishing evidence-based best practices for technology adoption and integration. The methodology encompasses comprehensive literature review, trend analysis, and pattern recognition across multiple technology domains. As this research is currently in progress, preliminary observations are being gathered and analyzed, with full results and conclusions to be published upon completion of the investigation phase.
+      </p>
+    </div>
+
+    <!-- Research Question -->
+    <div class="research-question-box">
+      <strong>Central Research Question:</strong> What are the key patterns and best practices for Emerging Technology Trends?
+    </div>
 
     <!-- Introduction -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem;">1. Introduction</h2>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        The landscape of technology is characterized by constant evolution, with emerging trends reshaping industries, societies, and human interactions at an unprecedented pace. Understanding these trends is not merely an academic exercise but a critical necessity for organizations, policymakers, and researchers seeking to navigate the complexities of digital transformation.
+    <section class="paper-section">
+      <h2>1. Introduction</h2>
+      <p>
+        The landscape of technology is characterized by rapid evolution and continuous innovation. Emerging technologies—defined as novel innovations that are currently developing or will be developed within the next five to ten years—have the potential to substantially alter the business and social environment. Understanding the patterns governing their development and adoption, as well as establishing best practices for their implementation, is crucial for organizations, policymakers, and researchers alike.
       </p>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        This research initiative addresses a fundamental challenge in technology studies: the identification and codification of patterns that govern the emergence, adoption, and maturation of new technologies. While individual technologies have been studied extensively, there exists a gap in our understanding of the meta-patterns—the underlying structures and best practices that transcend specific technological implementations.
+      <p>
+        This research mission seeks to expand knowledge in the domain of emerging technology trends by systematically investigating recurring patterns in technology evolution, adoption curves, implementation strategies, and success factors. By identifying and analyzing these patterns, we aim to develop a comprehensive framework of best practices that can guide stakeholders in navigating the complex terrain of technological innovation.
       </p>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        Our investigation seeks to answer: <em>What are the key patterns and best practices for Emerging Technology Trends?</em> This question encompasses multiple dimensions, including technological readiness levels, adoption curves, implementation frameworks, and success factors that determine whether a technology achieves mainstream adoption or remains confined to niche applications.
-      </p>
-      <p style="line-height: 1.8; text-align: justify;">
-        The significance of this research lies in its potential to provide stakeholders with a systematic approach to technology evaluation and adoption, reducing risk and enhancing the likelihood of successful implementation across diverse contexts.
+      <p>
+        The significance of this research lies in its potential to reduce uncertainty in technology adoption decisions, minimize implementation risks, and maximize the value derived from emerging technologies. As organizations increasingly rely on technological innovation for competitive advantage, evidence-based guidance becomes essential for strategic planning and resource allocation.
       </p>
     </section>
 
     <!-- Methodology -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem;">2. Methodology</h2>
-      
-      <h3 style="font-size: 1.2rem; color: #374151; margin-top: 1.5rem; margin-bottom: 0.75rem;">2.1 Research Design</h3>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        This study employs a mixed-methods approach, integrating quantitative analysis of technology adoption metrics with qualitative assessment of implementation case studies. The research framework consists of four interconnected phases:
+    <section class="paper-section">
+      <h2>2. Methodology</h2>
+      <p>
+        Our research methodology employs a multi-faceted approach to investigate emerging technology trends comprehensively. The investigation is structured around several complementary research strategies:
       </p>
       
-      <div style="margin: 1.5rem 0;">
-        <ol style="line-height: 1.8; padding-left: 2rem;">
-          <li style="margin-bottom: 0.75rem;"><strong>Literature Synthesis Phase:</strong> Systematic review of peer-reviewed publications, industry reports, and technical documentation covering emerging technologies from 2020-2024.</li>
-          <li style="margin-bottom: 0.75rem;"><strong>Pattern Recognition Phase:</strong> Application of data mining and clustering algorithms to identify recurring patterns in technology emergence and adoption trajectories.</li>
-          <li style="margin-bottom: 0.75rem;"><strong>Best Practice Extraction Phase:</strong> Comparative analysis of successful and unsuccessful technology implementations to distill actionable best practices.</li>
-          <li style="margin-bottom: 0.75rem;"><strong>Framework Validation Phase:</strong> Expert consultation and case study validation to ensure practical applicability of derived patterns and practices.</li>
-        </ol>
-      </div>
-
-      <h3 style="font-size: 1.2rem; color: #374151; margin-top: 1.5rem; margin-bottom: 0.75rem;">2.2 Data Collection</h3>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        Data collection encompasses multiple sources including academic databases (IEEE Xplore, ACM Digital Library), industry analyst reports (Gartner, Forrester), patent databases, and GitHub repositories for open-source technology projects. Selection criteria prioritize recency, impact factor, and relevance to emerging technology domains including artificial intelligence, blockchain, quantum computing, edge computing, and biotechnology.
+      <h3>2.1 Systematic Literature Review</h3>
+      <p>
+        A comprehensive review of academic literature, industry reports, and technical documentation is being conducted to establish the current state of knowledge regarding emerging technologies. This includes analysis of peer-reviewed publications, white papers, case studies, and market research reports spanning the past decade.
       </p>
-
-      <h3 style="font-size: 1.2rem; color: #374151; margin-top: 1.5rem; margin-bottom: 0.75rem;">2.3 Analytical Framework</h3>
-      <p style="line-height: 1.8; text-align: justify;">
-        The analytical framework integrates established models including the Technology Acceptance Model (TAM), Diffusion of Innovations Theory, and the Gartner Hype Cycle, enhanced with machine learning techniques for pattern detection. Quantitative metrics include adoption rates, investment flows, patent filings, and publication volumes. Qualitative analysis employs thematic coding and grounded theory approaches to extract emergent themes from case study narratives.
+      
+      <h3>2.2 Trend Analysis Framework</h3>
+      <p>
+        We employ quantitative and qualitative trend analysis methods to identify patterns in technology development and adoption. This includes:
+      </p>
+      <ul class="methodology-list">
+        <li>Time-series analysis of technology adoption rates</li>
+        <li>Cross-sectional comparison of implementation strategies across industries</li>
+        <li>Pattern recognition in technology lifecycle stages</li>
+        <li>Network analysis of technology interdependencies</li>
+      </ul>
+      
+      <h3>2.3 Best Practice Identification</h3>
+      <p>
+        Through case study analysis and comparative evaluation, we identify successful implementation patterns and extract generalizable best practices. This process involves examining both successful and unsuccessful technology adoption cases to understand critical success factors and common pitfalls.
+      </p>
+      
+      <h3>2.4 Data Collection and Analysis</h3>
+      <p>
+        The research leverages multiple data sources and analytical techniques to ensure comprehensive coverage and robust findings. Data validation and triangulation methods are employed to ensure reliability and validity of conclusions.
       </p>
     </section>
 
     <!-- Results -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem;">3. Results</h2>
-      
-      <div style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0;">
-        <p style="margin: 0; color: #92400e; line-height: 1.6;">
-          <strong>⚠️ Research in Progress:</strong> This section will be populated with key findings as data collection and analysis phases are completed. Current research is in the preliminary stages with active data gathering underway.
-        </p>
+    <section class="paper-section">
+      <h2>3. Results</h2>
+      <div class="empty-state">
+        <div class="empty-state-icon">📊</div>
+        <p>Research data collection and analysis are currently underway. Results will be populated as findings emerge from the investigation.</p>
       </div>
-
-      <p style="line-height: 1.8; text-align: justify; margin-top: 1.5rem;">
-        The results section will present:
-      </p>
-      <ul style="line-height: 1.8; padding-left: 2rem; margin: 1rem 0;">
-        <li>Identified patterns in technology emergence and maturation cycles</li>
-        <li>Statistical analysis of adoption rates across different technology categories</li>
-        <li>Taxonomy of best practices organized by implementation phase</li>
-        <li>Comparative case studies demonstrating successful pattern applications</li>
-        <li>Quantitative metrics supporting pattern validity and reliability</li>
-      </ul>
-
-      <h3 style="font-size: 1.2rem; color: #374151; margin-top: 2rem; margin-bottom: 0.75rem;">3.1 Preliminary Observations</h3>
-      <p style="line-height: 1.8; text-align: justify;">
-        While comprehensive results are pending completion of data analysis, preliminary observations suggest strong clustering of successful technology implementations around specific organizational readiness factors and phased adoption approaches. Further validation and statistical analysis are required before drawing definitive conclusions.
-      </p>
     </section>
 
     <!-- Figures -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem;">4. Figures</h2>
-      
-      <div class="card" style="background: #f3f4f6; text-align: center; padding: 3rem 2rem;">
-        <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.3;">📊</div>
-        <p style="color: #6b7280; margin: 0; font-style: italic;">No research figures available yet.</p>
-        <p style="color: #9ca3af; margin-top: 0.5rem; font-size: 0.9rem;">Figures and visualizations will be added as analysis progresses.</p>
+    <section class="paper-section">
+      <h2>4. Figures and Visualizations</h2>
+      <div class="empty-state">
+        <div class="empty-state-icon">📈</div>
+        <p>Figure gallery will be populated as research visualizations are generated.</p>
       </div>
     </section>
 
     <!-- Discussion -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem;">5. Discussion</h2>
+    <section class="paper-section">
+      <h2>5. Discussion</h2>
+      <p>
+        As this research is currently in the active investigation phase, comprehensive discussion of findings awaits the completion of data collection and analysis. Preliminary observations suggest several promising areas of inquiry:
+      </p>
       
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        The discussion section will provide critical interpretation of the identified patterns and best practices, situating findings within the broader context of technology studies and innovation research. This section will address:
+      <h3>5.1 Expected Contributions</h3>
+      <p>
+        Upon completion, this research is anticipated to contribute to the field by providing a systematic framework for understanding emerging technology patterns, a validated set of best practices for technology adoption, and actionable insights for stakeholders across various sectors.
       </p>
-
-      <h3 style="font-size: 1.2rem; color: #374151; margin-top: 1.5rem; margin-bottom: 0.75rem;">5.1 Theoretical Implications</h3>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        Analysis will explore how discovered patterns align with or challenge existing theoretical frameworks in technology adoption and diffusion. Particular attention will be given to temporal dynamics and cross-domain applicability of identified patterns.
+      
+      <h3>5.2 Theoretical Implications</h3>
+      <p>
+        The research aims to bridge the gap between theoretical models of technology diffusion and practical implementation challenges, offering both academic and practical value. By synthesizing patterns across multiple technology domains, we seek to develop generalizable principles that transcend specific technology types.
       </p>
-
-      <h3 style="font-size: 1.2rem; color: #374151; margin-top: 1.5rem; margin-bottom: 0.75rem;">5.2 Practical Applications</h3>
-      <p style="line-height: 1.8; text-align: justify; margin-bottom: 1rem;">
-        The discussion will translate academic findings into actionable frameworks for practitioners, including decision matrices for technology evaluation, risk assessment protocols, and implementation roadmaps tailored to different organizational contexts.
-      </p>
-
-      <h3 style="font-size: 1.2rem; color: #374151; margin-top: 1.5rem; margin-bottom: 0.75rem;">5.3 Limitations and Future Work</h3>
-      <p style="line-height: 1.8; text-align: justify;">
-        Acknowledged limitations will include temporal constraints of the study period, potential geographic biases in data sources, and the inherent challenges of predicting technology trajectories in rapidly changing environments. Future research directions will be proposed to address these limitations and extend the applicability of findings.
+      
+      <h3>5.3 Practical Applications</h3>
+      <p>
+        The findings from this research are designed to inform strategic decision-making processes in organizations considering adoption of emerging technologies. The identification of best practices will provide concrete guidance for implementation teams, risk managers, and innovation leaders.
       </p>
     </section>
 
     <!-- Conclusion -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem;">6. Conclusion</h2>
-      
-      <div style="background: #dbeafe; border-left: 4px solid #3b82f6; padding: 1.5rem; margin: 1.5rem 0;">
-        <p style="margin: 0; color: #1e3a8a; line-height: 1.6;">
-          <strong>🔬 Research Status:</strong> In progress — no conclusion yet.
-        </p>
-        <p style="margin-top: 0.75rem; color: #1e40af; line-height: 1.6;">
-          The conclusion section will synthesize key findings, articulate the contribution to existing knowledge, and provide clear recommendations for stakeholders. This section will be completed upon finalization of all research phases.
-        </p>
+    <section class="paper-section">
+      <h2>6. Conclusion</h2>
+      <div class="empty-state">
+        <div class="empty-state-icon">🔬</div>
+        <p><strong>Research Status:</strong> In Progress</p>
+        <p style="margin-top: 1rem;">Conclusions will be drawn upon completion of the research investigation phase. The final paper will synthesize all findings into actionable insights and recommendations for understanding and leveraging emerging technology trends.</p>
       </div>
+    </section>
 
-      <p style="line-height: 1.8; text-align: justify; margin-top: 1.5rem;">
-        Upon completion, the conclusion will address:
+    <!-- Future Work -->
+    <section class="paper-section">
+      <h2>7. Future Work</h2>
+      <p>
+        As the research progresses, several avenues for expansion and refinement have been identified:
       </p>
-      <ul style="line-height: 1.8; padding-left: 2rem; margin: 1rem 0;">
-        <li>Summary of identified patterns and their significance</li>
-        <li>Codified best practices with applicability guidelines</li>
-        <li>Strategic recommendations for technology stakeholders</li>
-        <li>Contributions to technology studies literature</li>
-        <li>Directions for continued research and validation</li>
+      <ul class="methodology-list">
+        <li>Longitudinal tracking of technology trends to validate pattern persistence</li>
+        <li>Cross-cultural analysis of technology adoption patterns</li>
+        <li>Development of predictive models for technology trend forecasting</li>
+        <li>Investigation of emerging technology convergence and synergies</li>
+        <li>Framework validation through empirical testing and case studies</li>
       </ul>
-    </section>
-
-    <!-- References Placeholder -->
-    <section style="margin-bottom: 3rem;">
-      <h2 style="font-size: 1.5rem; color: #1f2937; border-bottom: 1px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1rem;">References</h2>
-      <p style="line-height: 1.8; color: #6b7280; font-style: italic;">
-        References will be compiled and formatted in IEEE style upon completion of the literature review phase. Expected to include 50-100 citations spanning academic publications, industry reports, and technical documentation.
+      <p>
+        These future research directions will build upon the foundations established in this initial investigation, creating a comprehensive body of knowledge regarding emerging technology trends and their practical implications.
       </p>
     </section>
 
-    <!-- Paper Metadata Footer -->
-    <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #e5e7eb; text-align: center; color: #6b7280; font-size: 0.9rem;">
-      <p><strong>Paper Version:</strong> 0.1 (Preprint)</p>
-      <p style="margin-top: 0.5rem;"><strong>Last Updated:</strong> <span id="updateDate"></span></p>
-      <p style="margin-top: 1rem; font-style: italic;">This is a working paper subject to revision. Please check for updated versions.</p>
-    </footer>
+    <!-- References -->
+    <section class="paper-section">
+      <h2>References</h2>
+      <div class="empty-state">
+        <div class="empty-state-icon">📚</div>
+        <p>Reference list will be compiled as the research progresses and sources are cited throughout the paper.</p>
+      </div>
+    </section>
 
-  </article>
+    <!-- Paper Versions -->
+    <section class="paper-section">
+      <h2>Paper Versions</h2>
+      <p style="color: #6b7280; font-style: italic;">
+        <strong>Tracked Versions:</strong> 0 versions
+      </p>
+      <div class="empty-state">
+        <div class="empty-state-icon">📄</div>
+        <p>No paper versions have been generated yet. Versions will be tracked as the research progresses through drafts and revisions.</p>
+      </div>
+    </section>
 
-  <!-- Research Progress Timeline -->
-  <div class="card" style="margin-top: 2rem; max-width: 850px; margin-left: auto; margin-right: auto;">
-    <h3 style="margin-bottom: 1.5rem;">Research Timeline</h3>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <span class="badge badge-accent">Phase 1</span>
-          <strong>Literature Review & Data Collection</strong>
-        </div>
-        <p style="margin-top: 0.5rem; color: #6b7280;">In Progress - Gathering sources and establishing research corpus</p>
-      </div>
-      <div class="timeline-item" style="opacity: 0.5;">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <span class="badge">Phase 2</span>
-          <strong>Pattern Analysis</strong>
-        </div>
-        <p style="margin-top: 0.5rem; color: #6b7280;">Pending - Statistical and qualitative analysis of collected data</p>
-      </div>
-      <div class="timeline-item" style="opacity: 0.5;">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <span class="badge">Phase 3</span>
-          <strong>Framework Development</strong>
-        </div>
-        <p style="margin-top: 0.5rem; color: #6b7280;">Pending - Synthesis of findings into actionable frameworks</p>
-      </div>
-      <div class="timeline-item" style="opacity: 0.5;">
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <span class="badge">Phase 4</span>
-          <strong>Validation & Publication</strong>
-        </div>
-        <p style="margin-top: 0.5rem; color: #6b7280;">Pending - Expert review and final paper preparation</p>
-      </div>
-    </div>
   </div>
 
-</main>
+  <script>
+    // Set current date
+    const dateElement = document.getElementById('current-date');
+    const today = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    dateElement.textContent = today.toLocaleDateString('en-US', options);
+  </script>
 
-<script>
-  // Set current date
-  const today = new Date();
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  const formattedDate = today.toLocaleDateString('en-US', options);
-  document.getElementById('currentDate').textContent = formattedDate;
-  document.getElementById('updateDate').textContent = formattedDate;
-</script>
+</main>
 </main>
 <footer>
-  <div class="container">
-    <p>Powered by <a href="https://hubify.com/research" target="_blank" rel="noopener">Hubify</a></p>
-    <p>Last updated: 2026-02-17</p>
-    <p>Built autonomously by AI agents</p>
-    <p><a href="https://github.com/Hubify-Projects/expand-knowledge-in-emerging-technology-trends" target="_blank" rel="noopener">View on GitHub</a></p>
+  <div class="footer-content">
+    <div class="footer-links">
+      <span>Powered by <a href="https://hubify.com/research">Hubify</a></span>
+      <span>•</span>
+      <span>Last updated: 2026-02-17</span>
+      <span>•</span>
+      <span>Built autonomously by AI agents</span>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/Hubify-Projects/expand-knowledge-in-emerging-technology-trends" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
   </div>
 </footer>
 <script>
