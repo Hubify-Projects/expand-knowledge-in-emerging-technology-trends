@@ -12,402 +12,234 @@
 <nav><div class="nav-inner"><span class="brand">Expand knowledge in Emerging Technolo...</span><a href="index.html" data-page="index">Overview</a><a href="findings.html" data-page="findings">Findings</a><a href="paper.html" data-page="paper">Paper</a><a href="versions.html" data-page="versions">Versions</a><a href="team.html" data-page="team">Team</a><a href="sources.html" data-page="sources">Sources</a></div></nav>
 <main class="container">
 <main class="container">
-  <div class="section fade-in">
-    <div class="card">
-      <div style="text-align: center; margin-bottom: 2rem;">
-        <div class="badge badge-warning" style="margin-bottom: 1.5rem;">PAPER IN PROGRESS</div>
-        <h1 style="font-family: 'Crimson Text', Georgia, serif; font-size: 2.5rem; margin-bottom: 1rem; line-height: 1.3;">
-          Patterns and Best Practices in Emerging Technology Trends: A Systematic Analysis
-        </h1>
-        <p class="text-muted" style="font-size: 1rem; margin-bottom: 0.5rem;">
-          <strong>AI Research Collective</strong>
-        </p>
-        <p class="text-muted text-sm" style="margin-bottom: 2rem;">
-          Department of Technology Research · arXiv:pending
-        </p>
-        <p class="text-xs text-muted">
-          <strong>Submitted:</strong> <span id="current-date"></span> · <strong>Status:</strong> Draft v0.0
-        </p>
-      </div>
-
-      <div class="phase-bar" style="margin: 2rem 0;">
-        <div class="phase-segment active" style="flex: 1;">
-          <div style="font-size: 0.75rem; font-weight: 600; margin-bottom: 0.25rem;">Planning</div>
-          <div style="font-size: 0.65rem; opacity: 0.7;">Active</div>
-        </div>
-        <div class="phase-segment" style="flex: 1;">
-          <div style="font-size: 0.75rem; font-weight: 600; margin-bottom: 0.25rem;">Data Collection</div>
-          <div style="font-size: 0.65rem; opacity: 0.7;">Pending</div>
-        </div>
-        <div class="phase-segment" style="flex: 1;">
-          <div style="font-size: 0.75rem; font-weight: 600; margin-bottom: 0.25rem;">Analysis</div>
-          <div style="font-size: 0.65rem; opacity: 0.7;">Pending</div>
-        </div>
-        <div class="phase-segment" style="flex: 1;">
-          <div style="font-size: 0.75rem; font-weight: 600; margin-bottom: 0.25rem;">Synthesis</div>
-          <div style="font-size: 0.65rem; opacity: 0.7;">Pending</div>
-        </div>
-      </div>
-
-      <div style="border-top: 1px solid var(--border); padding-top: 2rem; margin-top: 2rem;">
-        <h2 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.5rem; margin-bottom: 1rem;">Abstract</h2>
-        <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify;">
-          This paper presents a systematic investigation into the key patterns and best practices governing emerging technology trends. 
-          As technological innovation accelerates across multiple domains—including artificial intelligence, quantum computing, biotechnology, 
-          and distributed systems—understanding the underlying patterns of emergence, adoption, and impact becomes critical for both 
-          researchers and practitioners. Our research question addresses the fundamental structure of technology trend evolution: 
-          <em>What are the key patterns and best practices for Emerging Technology Trends?</em> This work employs a multi-methodological 
-          approach combining systematic literature review, empirical data analysis, and framework synthesis to identify reproducible 
-          patterns in technology emergence cycles. The study aims to contribute both descriptive insights into how technologies evolve 
-          and prescriptive frameworks for anticipating and managing emerging technology adoption. <strong>Status: Research in progress—data 
-          collection and analysis phases are ongoing.</strong>
-        </p>
-      </div>
+  <div class="hero">
+    <div class="badge badge-warning" style="margin-bottom: 1.5rem;">Paper in Progress</div>
+    <h1>Emerging Technology Trends: Patterns and Best Practices</h1>
+    <p class="subtitle">A Systematic Investigation of Key Patterns in Emerging Technologies</p>
+    <div class="meta">
+      <span><strong>Author:</strong> Houston Golden</span>
+      <span class="text-muted">with AI research assistance from Hubify autonomous agents</span>
+      <span class="text-muted">•</span>
+      <span class="text-muted">Draft Version • December 2024</span>
     </div>
   </div>
 
-  <div class="section">
+  <section class="section">
     <div class="card">
-      <h2 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.8rem; margin-bottom: 1.5rem;">1. Introduction</h2>
-      
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        The landscape of technological innovation has entered an era of unprecedented complexity and velocity. Emerging technologies—defined 
-        as novel systems, methods, or applications in early stages of development with potential for significant impact—now arise across 
-        multiple simultaneous fronts. From transformer-based language models revolutionizing natural language processing to quantum 
-        error correction approaching practical thresholds, from CRISPR-based gene editing entering clinical deployment to zero-knowledge 
-        cryptographic protocols enabling privacy-preserving computation, the contemporary technology ecosystem presents both extraordinary 
-        opportunities and profound analytical challenges.
-      </p>
-
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        Understanding patterns in technology emergence is not merely an academic exercise. Organizations allocating research budgets, 
-        policymakers drafting regulatory frameworks, and researchers directing scientific efforts all require frameworks for distinguishing 
-        genuine technological inflection points from transient hype cycles. The literature on technology forecasting and innovation 
-        diffusion provides theoretical foundations—from Rogers' diffusion of innovations model [1] to Gartner's hype cycle framework [2]—yet 
-        these established models often struggle to capture the unique dynamics of contemporary technology ecosystems characterized by 
-        rapid open-source development, global collaborative networks, and accelerating feedback loops between research and deployment.
-      </p>
-
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        This research initiative addresses these gaps through systematic analysis aimed at identifying reproducible patterns in how 
-        technologies emerge, mature, and achieve impact. Our investigation focuses on multiple dimensions: the temporal dynamics of 
-        technology development cycles, the structural characteristics of successful technology adoption pathways, the role of ecosystem 
-        factors (infrastructure, talent, capital, regulatory environment) in determining technology trajectories, and the emergence 
-        of best practices for navigating uncertainty in technology evaluation and strategic planning.
-      </p>
-
-      <div style="background: var(--bg-card); border-left: 3px solid var(--accent); padding: 1.25rem; margin: 2rem 0;">
-        <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; margin: 0;">
-          <strong>Research Objectives:</strong> (1) Identify quantifiable patterns in technology emergence across diverse domains, 
-          (2) Synthesize best practices for technology evaluation and strategic adoption, (3) Develop predictive frameworks for 
-          assessing technology maturity and impact potential, (4) Provide actionable insights for researchers, practitioners, and 
-          policymakers navigating the emerging technology landscape.
-        </p>
+      <h2>Research Status</h2>
+      <div class="progress-bar" style="margin: 1.5rem 0;">
+        <div class="progress-fill" style="width: 15%;"></div>
       </div>
+      <div class="grid-3">
+        <div class="stat">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Paper Versions</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Key Findings</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Figures</div>
+        </div>
+      </div>
+      <p class="text-muted" style="margin-top: 1.5rem; text-align: center;">
+        This research mission is in its early stages. The paper structure below represents the planned organization. Content will be populated as research progresses and findings are validated.
+      </p>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="section">
+    <h2>Abstract</h2>
     <div class="card">
-      <h2 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.8rem; margin-bottom: 1.5rem;">2. Related Work & Prior Research</h2>
+      <p><strong>Research Question:</strong> What are the key patterns and best practices for Emerging Technology Trends?</p>
       
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        Our research builds upon several established bodies of literature that provide foundational frameworks for understanding 
-        technology evolution and innovation patterns. This section reviews key prior work and explicitly delineates what aspects 
-        of existing research we leverage versus what constitutes novel contributions of this investigation.
-      </p>
+      <p style="margin-top: 1rem;">This paper presents an ongoing systematic investigation into the patterns and best practices that characterize emerging technology trends. The research aims to identify recurring structural elements, adoption trajectories, and implementation frameworks that distinguish successful technology emergence from transient phenomena.</p>
+      
+      <p style="margin-top: 1rem;"><strong>Status:</strong> Research in progress. Initial framework development and literature review underway. No conclusions have been reached yet.</p>
+    </div>
+  </section>
 
-      <h3 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.3rem; margin: 1.5rem 0 1rem;">2.1 Innovation Diffusion Theory</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        Rogers' seminal work on the diffusion of innovations (1962, with subsequent editions through 2003) [1] established the 
-        foundational S-curve model of technology adoption and the categorization of adopters (innovators, early adopters, early 
-        majority, late majority, laggards). This framework provides essential vocabulary and conceptual structure for understanding 
-        adoption dynamics. <strong>We explicitly build upon this foundation</strong> rather than claiming novelty in basic adoption 
-        curve characterization. Our contribution extends Rogers' framework by examining how modern development ecosystems (open source, 
-        API-first architectures, cloud infrastructure) alter traditional adoption dynamics.
-      </p>
-
-      <h3 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.3rem; margin: 1.5rem 0 1rem;">2.2 Technology Maturity Models</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        Technology Readiness Levels (TRLs), originally developed by NASA in the 1970s and formalized by Mankins (1995) [3], provide 
-        a nine-level scale from basic principles observation through actual system deployment. The Gartner Hype Cycle, introduced 
-        by Fenn and Raskino (2008) [2], models the typical progression through phases: Innovation Trigger, Peak of Inflated Expectations, 
-        Trough of Disillusionment, Slope of Enlightenment, and Plateau of Productivity. <strong>These are established models from 
-        prior literature.</strong> Our research does not claim to have invented maturity assessment frameworks, but rather applies 
-        and extends them to contemporary technology domains where their predictive power may require calibration.
-      </p>
-
-      <h3 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.3rem; margin: 1.5rem 0 1rem;">2.3 Emerging Technology Taxonomies</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        Recent work by Rotolo et al. (2015) [4] provides a systematic definition of "emerging technologies" characterized by five 
-        attributes: radical novelty, relatively fast growth, coherence, prominent impact, and uncertainty/ambiguity. Brem and Wolfram 
-        (2014) [5] examine innovation pathways in emerging technology contexts. <strong>We adopt these definitional frameworks</strong> 
-        as starting points for technology identification and categorization. Our novel contribution lies in applying these definitions 
-        to conduct comparative analysis across technology domains to identify cross-domain patterns.
-      </p>
-
-      <h3 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.3rem; margin: 1.5rem 0 1rem;">2.4 Distinct Contributions of This Work</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        <strong>What is genuinely novel in this research:</strong>
-      </p>
-      <ul style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; margin-left: 2rem; margin-bottom: 1.25rem;">
-        <li style="margin-bottom: 0.75rem;"><strong>Cross-domain pattern identification:</strong> Rather than studying single technologies in isolation, 
-        we conduct systematic comparative analysis across AI, quantum computing, biotechnology, and distributed systems to identify 
-        universal versus domain-specific patterns.</li>
-        <li style="margin-bottom: 0.75rem;"><strong>Modern ecosystem factor analysis:</strong> We extend traditional models by incorporating 
-        contemporary factors (open-source development velocity, API ecosystem maturity, regulatory anticipation mechanisms) not 
-        central to frameworks developed in pre-internet eras.</li>
-        <li style="margin-bottom: 0.75rem;"><strong>Predictive framework synthesis:</strong> We develop integrated frameworks combining 
-        insights from multiple theoretical traditions with empirical validation from recent technology trajectories.</li>
-        <li style="margin-bottom: 0.75rem;"><strong>Practitioner-oriented best practices:</strong> We synthesize actionable guidelines 
-        grounded in pattern analysis, addressing the gap between academic technology forecasting literature and operational 
-        decision-making needs.</li>
+  <section class="section">
+    <h2>1. Introduction</h2>
+    <div class="card">
+      <p>The landscape of technology evolution presents a complex challenge for researchers, practitioners, and organizations seeking to understand and leverage emerging trends. While individual technologies receive substantial attention, systematic analysis of the <em>patterns</em> underlying technology emergence remains underdeveloped.</p>
+      
+      <p style="margin-top: 1rem;">This research mission investigates the fundamental question: What distinguishes emerging technology trends that achieve lasting impact from those that fade? We propose that such trends exhibit identifiable patterns in their development, adoption, and integration—patterns that can be systematically analyzed and understood.</p>
+      
+      <h3 style="margin-top: 2rem;">1.1 Motivation</h3>
+      <p>Organizations face increasing pressure to identify and adopt emerging technologies while avoiding premature commitment to unproven innovations. This tension creates a critical need for frameworks that can:</p>
+      <ul style="margin-left: 2rem; margin-top: 1rem;">
+        <li>Distinguish substantive trends from hype cycles</li>
+        <li>Identify structural patterns in technology emergence</li>
+        <li>Establish best practices for evaluation and adoption</li>
+        <li>Predict likely trajectories of technology evolution</li>
       </ul>
-
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 0;">
-        <em>Academic integrity note:</em> This research stands on the shoulders of decades of innovation studies scholarship. 
-        We claim novelty only for the specific analytical approaches, empirical findings, and synthesized frameworks that extend 
-        beyond existing literature, not for the foundational concepts themselves.
-      </p>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="card">
-      <h2 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.8rem; margin-bottom: 1.5rem;">3. Methodology</h2>
       
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        This research employs a mixed-methods approach combining systematic literature review, empirical data analysis, and framework 
-        synthesis. The methodology is designed to ensure both rigor in data collection and relevance for practical application. 
-        Our investigation proceeds through four interconnected phases:
-      </p>
+      <h3 style="margin-top: 2rem;">1.2 Research Scope</h3>
+      <p>This investigation focuses on cross-cutting patterns rather than technology-specific analysis. We seek generalizable principles that apply across diverse domains—from artificial intelligence and quantum computing to biotechnology and distributed systems.</p>
+      
+      <p style="margin-top: 1rem;" class="text-muted"><em>Note: This introduction will be expanded as research progresses and the scope becomes more precisely defined through empirical investigation.</em></p>
+    </div>
+  </section>
 
-      <h3 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.3rem; margin: 1.5rem 0 1rem;">3.1 Systematic Literature Review</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        We conduct a comprehensive review of academic literature on technology emergence, innovation diffusion, and technology 
-        forecasting spanning 1960-2024. Search criteria include peer-reviewed publications in technology management, innovation 
-        studies, and domain-specific technical literature. Databases searched include IEEE Xplore, ACM Digital Library, PubMed 
-        (for biotechnology), arXiv (for AI and quantum computing), and Web of Science for cross-disciplinary coverage. The review 
-        follows PRISMA guidelines for systematic reviews, with explicit inclusion/exclusion criteria and quality assessment protocols.
-      </p>
+  <section class="section">
+    <h2>2. Prior Work and Related Research</h2>
+    <div class="card">
+      <p>Understanding emerging technology trends builds upon substantial prior work in technology adoption theory, innovation studies, and futures research. This section will provide a comprehensive review of relevant literature and clearly position this research's contributions relative to existing knowledge.</p>
+      
+      <h3 style="margin-top: 2rem;">2.1 Technology Adoption Frameworks</h3>
+      <p class="text-muted"><em>Literature review in progress. Will include analysis of Rogers' Diffusion of Innovation theory, Moore's technology adoption lifecycle, and contemporary frameworks for emerging technology assessment.</em></p>
+      
+      <h3 style="margin-top: 2rem;">2.2 Pattern Recognition in Technology Evolution</h3>
+      <p class="text-muted"><em>To be developed. Will examine existing work on identifying recurring patterns in technology emergence and evolution.</em></p>
+      
+      <h3 style="margin-top: 2rem;">2.3 Best Practices Literature</h3>
+      <p class="text-muted"><em>To be developed. Will review documented best practices for technology evaluation, adoption, and integration across various domains.</em></p>
+      
+      <div class="card-accent" style="margin-top: 2rem;">
+        <p><strong>Commitment to Academic Integrity:</strong> This research will clearly distinguish between: (a) established results from existing literature with proper citation, (b) modifications or extensions of prior work with explicit attribution and explanation of novelty, and (c) genuinely original contributions from this investigation. Any claims of novelty will be specific about what is new and why it represents an advance over existing knowledge.</p>
+      </div>
+    </div>
+  </section>
 
-      <h3 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.3rem; margin: 1.5rem 0 1rem;">3.2 Empirical Data Collection</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        Empirical analysis draws from multiple data sources to characterize technology emergence patterns quantitatively:
-      </p>
-      <ul style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; margin-left: 2rem; margin-bottom: 1.25rem;">
-        <li style="margin-bottom: 0.75rem;"><strong>Publication metrics:</strong> Citation patterns, publication velocity, and author 
-        network evolution from scholarly databases</li>
-        <li style="margin-bottom: 0.75rem;"><strong>Development activity:</strong> GitHub repository statistics (stars, forks, commits, 
-        contributor growth) for open-source technology projects</li>
-        <li style="margin-bottom: 0.75rem;"><strong>Investment signals:</strong> Venture capital funding data, corporate R&D allocation, 
-        and patent filing trends</li>
-        <li style="margin-bottom: 0.75rem;"><strong>Adoption indicators:</strong> Technology usage surveys, stack adoption reports, 
-        and deployment case studies</li>
-        <li style="margin-bottom: 0.75rem;"><strong>Media attention:</strong> Search trends, news article frequency, and conference 
-        presentation data as proxies for mindshare</li>
+  <section class="section">
+    <h2>3. Methodology</h2>
+    <div class="card">
+      <p>This research employs a multi-method approach combining systematic literature review, empirical case study analysis, and pattern identification techniques.</p>
+      
+      <h3 style="margin-top: 2rem;">3.1 Research Design</h3>
+      <p class="text-muted"><em>Detailed methodology to be established. Planned approaches include:</em></p>
+      <ul style="margin-left: 2rem; margin-top: 1rem;" class="text-muted">
+        <li><em>Systematic review of technology trend literature and reports</em></li>
+        <li><em>Comparative case study analysis of successful and unsuccessful emerging technologies</em></li>
+        <li><em>Pattern mining from historical technology adoption data</em></li>
+        <li><em>Expert interview protocol for validation of identified patterns</em></li>
       </ul>
-
-      <h3 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.3rem; margin: 1.5rem 0 1rem;">3.3 Pattern Analysis Framework</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        Pattern identification employs both qualitative comparative analysis and quantitative modeling. For time-series data 
-        (publication trends, funding flows), we fit multiple curve models (exponential, logistic, power law) to identify characteristic 
-        growth dynamics. For categorical patterns (adoption pathways, failure modes), we use qualitative coding and cross-case 
-        analysis. Pattern validation involves testing identified patterns against held-out technology cases not used in pattern 
-        discovery.
-      </p>
-
-      <h3 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.3rem; margin: 1.5rem 0 1rem;">3.4 Framework Synthesis & Validation</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        The final synthesis phase integrates findings into actionable frameworks and best practice guidelines. Validation occurs 
-        through expert review (consultation with technology practitioners and researchers), retrospective application (testing 
-        framework predictions against historical technology trajectories), and pilot prospective application (applying frameworks 
-        to evaluate currently emerging technologies). Validation criteria include both predictive accuracy and practical utility 
-        as assessed by potential framework users.
-      </p>
-
-      <div style="background: var(--bg-card); border-left: 3px solid var(--accent); padding: 1.25rem; margin: 2rem 0;">
-        <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; margin: 0;">
-          <strong>Methodological Note:</strong> All data collection follows ethical research protocols. Publicly available data 
-          sources are used exclusively. No proprietary or confidential information is incorporated. Analysis code and aggregated 
-          data will be made available to support reproducibility.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="card">
-      <h2 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.8rem; margin-bottom: 1.5rem;">4. Results</h2>
       
-      <div style="background: var(--bg-card); border: 2px dashed var(--border); padding: 2rem; text-align: center; margin: 2rem 0;">
-        <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.1rem; margin-bottom: 1rem;">
-          <strong>Research In Progress</strong>
-        </p>
-        <p class="text-muted" style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8;">
-          Data collection and analysis phases are currently ongoing. This section will be populated with empirical findings, 
-          identified patterns, statistical analyses, and validated insights as research progresses through the methodology pipeline. 
-          Preliminary results will be added incrementally as each analysis component reaches completion and undergoes validation.
-        </p>
-        <div style="margin-top: 1.5rem;">
-          <span class="badge badge-neutral">Literature Review: In Progress</span>
-          <span class="badge badge-neutral" style="margin-left: 0.5rem;">Data Collection: Planned</span>
-          <span class="badge badge-neutral" style="margin-left: 0.5rem;">Pattern Analysis: Pending</span>
-        </div>
-      </div>
-
-      <h3 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.3rem; margin: 1.5rem 0 1rem;">4.1 Anticipated Result Structure</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        Upon completion, this section will present findings organized by research objective:
-      </p>
-      <ul style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; margin-left: 2rem; margin-bottom: 1.25rem;">
-        <li style="margin-bottom: 0.75rem;">Quantified patterns in technology emergence timelines across domains</li>
-        <li style="margin-bottom: 0.75rem;">Statistical characterization of successful versus unsuccessful technology trajectories</li>
-        <li style="margin-bottom: 0.75rem;">Identification of ecosystem factors correlating with technology maturation rates</li>
-        <li style="margin-bottom: 0.75rem;">Documented best practices synthesized from case study analysis</li>
-        <li style="margin-bottom: 0.75rem;">Predictive framework validation results</li>
+      <h3 style="margin-top: 2rem;">3.2 Data Sources</h3>
+      <p class="text-muted"><em>Data collection framework to be defined based on research questions refinement.</em></p>
+      
+      <h3 style="margin-top: 2rem;">3.3 AI-Assisted Research Process</h3>
+      <p>This research leverages autonomous AI agents for specific research tasks while maintaining human oversight and creative direction. AI assistance includes:</p>
+      <ul style="margin-left: 2rem; margin-top: 1rem;">
+        <li>Literature review and citation management</li>
+        <li>Data validation and quality assurance</li>
+        <li>Pattern analysis and statistical computation</li>
+        <li>Formalization of theoretical frameworks</li>
       </ul>
+      <p style="margin-top: 1rem;">The core research questions, theoretical insights, and interpretative framework remain human-authored. AI tools serve as research assistants, not co-authors of the intellectual content.</p>
     </div>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="section">
+    <h2>4. Results</h2>
     <div class="card">
-      <h2 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.8rem; margin-bottom: 1.5rem;">5. Discussion</h2>
-      
-      <div style="background: var(--bg-card); border: 2px dashed var(--border); padding: 2rem; text-align: center; margin: 2rem 0;">
-        <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.1rem; margin-bottom: 1rem;">
-          <strong>Discussion Pending Results</strong>
-        </p>
-        <p class="text-muted" style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8;">
-          This section will provide interpretation of empirical findings, comparison with theoretical predictions from existing 
-          literature, discussion of implications for both research and practice, acknowledgment of limitations, and directions 
-          for future investigation. Content will be developed following completion of the results section.
-        </p>
+      <div class="card-accent">
+        <p><strong>Status:</strong> No research findings have been generated yet for this mission.</p>
+        <p style="margin-top: 1rem;">Results will be added here as the research progresses through data collection, analysis, and validation phases. Each finding will include:</p>
+        <ul style="margin-left: 2rem; margin-top: 1rem;">
+          <li>Clear statement of the result</li>
+          <li>Supporting evidence or derivation</li>
+          <li>Statistical significance where applicable</li>
+          <li>Attribution of any mathematical or theoretical frameworks used</li>
+          <li>Explicit identification of novel contributions versus application of existing methods</li>
+        </ul>
       </div>
+      
+      <h3 style="margin-top: 2rem;">4.1 Identified Patterns</h3>
+      <p class="text-muted"><em>To be populated with validated patterns as research progresses.</em></p>
+      
+      <h3 style="margin-top: 2rem;">4.2 Best Practices Framework</h3>
+      <p class="text-muted"><em>To be developed based on empirical findings.</em></p>
+      
+      <h3 style="margin-top: 2rem;">4.3 Predictive Indicators</h3>
+      <p class="text-muted"><em>To be established if sufficient data supports predictive modeling.</em></p>
+    </div>
+  </section>
 
-      <h3 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.3rem; margin: 1.5rem 0 1rem;">5.1 Planned Discussion Components</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        The discussion will address several critical dimensions of the research findings:
-      </p>
-      <ul style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; margin-left: 2rem; margin-bottom: 1.25rem;">
-        <li style="margin-bottom: 0.75rem;"><strong>Theoretical implications:</strong> How identified patterns confirm, extend, or 
-        challenge existing theoretical frameworks from innovation studies</li>
-        <li style="margin-bottom: 0.75rem;"><strong>Practical applications:</strong> Actionable insights for technology strategists, 
-        researchers, and policymakers</li>
-        <li style="margin-bottom: 0.75rem;"><strong>Limitations and uncertainties:</strong> Honest assessment of research constraints, 
-        data limitations, and boundary conditions for findings</li>
-        <li style="margin-bottom: 0.75rem;"><strong>Future research directions:</strong> Open questions and promising avenues for 
-        subsequent investigation</li>
+  <section class="section">
+    <h2>5. Discussion</h2>
+    <div class="card">
+      <p class="text-muted"><em>Discussion section will analyze implications of findings once results are available. This section will interpret results in the context of existing literature, discuss limitations, and explore theoretical and practical implications.</em></p>
+      
+      <h3 style="margin-top: 2rem;">5.1 Theoretical Implications</h3>
+      <p class="text-muted"><em>To be developed based on results.</em></p>
+      
+      <h3 style="margin-top: 2rem;">5.2 Practical Applications</h3>
+      <p class="text-muted"><em>To be developed based on results.</em></p>
+      
+      <h3 style="margin-top: 2rem;">5.3 Limitations</h3>
+      <p class="text-muted"><em>Methodological limitations and constraints will be discussed transparently as they emerge during research.</em></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>6. Figures and Visualizations</h2>
+    <div class="card">
+      <div class="card-accent">
+        <p><strong>Status:</strong> No figures have been generated yet for this research mission.</p>
+        <p style="margin-top: 1rem;">Planned visualizations may include:</p>
+        <ul style="margin-left: 2rem; margin-top: 1rem;">
+          <li>Pattern taxonomy diagrams</li>
+          <li>Technology adoption trajectory comparisons</li>
+          <li>Best practice framework illustrations</li>
+          <li>Statistical analysis charts and graphs</li>
+        </ul>
+        <p style="margin-top: 1rem;" class="text-muted">Figures will be added here with full captions and descriptions as they are created and validated.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>7. Conclusion</h2>
+    <div class="card">
+      <div class="card-accent">
+        <p><strong>Research Status:</strong> In progress — no conclusion has been reached yet.</p>
+        <p style="margin-top: 1rem;">This paper represents ongoing research. Conclusions will be drawn only after sufficient data collection, analysis, and validation have been completed. The conclusion section will synthesize findings, assess whether the research question has been adequately addressed, and identify directions for future investigation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>8. Acknowledgments</h2>
+    <div class="card">
+      <p>The author acknowledges the use of AI research assistants (Anthropic Claude, OpenAI Deep Research, DeepSeek) for mathematical formalization, literature review, data validation, and quality assurance. These tools serve as autonomous research assistants that help formalize ideas, validate findings, manage citations, and ensure methodological rigor.</p>
+      
+      <p style="margin-top: 1rem;">The core theoretical ideas, creative insights, and research direction are the author's own. Houston Golden (Founder, BAMF / Hubify) conceived the research questions, provides the conceptual framework, and maintains oversight of all research outputs. AI agents operate under human supervision and do not contribute original theoretical insights or interpretative judgments.</p>
+      
+      <p style="margin-top: 1rem;">This transparent model of human-AI collaboration reflects our commitment to academic integrity while leveraging computational tools to enhance research quality and efficiency.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>9. References</h2>
+    <div class="card">
+      <p class="text-muted"><em>References will be added as literature review progresses and citations are incorporated throughout the paper. All references will follow standard academic citation format with complete bibliographic information.</em></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card-accent">
+      <h3>About This Paper</h3>
+      <p>This is a living document representing active research. The structure and content will evolve as the investigation progresses. Updates will be tracked through versioned releases, with each version documented in the research mission timeline.</p>
+      
+      <p style="margin-top: 1rem;"><strong>Current Phase:</strong> Early-stage research and framework development</p>
+      <p style="margin-top: 0.5rem;"><strong>Next Milestones:</strong></p>
+      <ul style="margin-left: 2rem; margin-top: 0.5rem;">
+        <li>Complete literature review</li>
+        <li>Define detailed methodology</li>
+        <li>Begin data collection</li>
+        <li>Generate initial findings</li>
       </ul>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="card">
-      <h2 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.8rem; margin-bottom: 1.5rem;">6. Conclusion</h2>
       
-      <div style="background: var(--bg-card); border: 2px dashed var(--border); padding: 2rem; text-align: center; margin: 2rem 0;">
-        <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.1rem; margin-bottom: 1rem;">
-          <strong>Research In Progress</strong>
-        </p>
-        <p class="text-muted" style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8;">
-          Conclusion pending completion of research phases. This section will synthesize key findings, restate principal contributions, 
-          and provide closing perspective on the implications of this work for understanding emerging technology trends.
-        </p>
-      </div>
-
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; text-align: justify; margin-bottom: 1.25rem;">
-        <strong>Current Status:</strong> This research initiative has established theoretical foundations, designed rigorous methodology, 
-        and is proceeding through systematic data collection and analysis. The investigation aims to deliver validated insights into 
-        patterns governing technology emergence and practical frameworks for navigating the emerging technology landscape. Updates 
-        will be incorporated as research progresses through planned phases.
-      </p>
+      <p style="margin-top: 1rem;" class="text-muted">For questions or collaboration inquiries regarding this research, contact Houston Golden via Hubify.</p>
     </div>
-  </div>
-
-  <div class="section">
-    <div class="card">
-      <h2 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.8rem; margin-bottom: 1.5rem;">Figures & Supplementary Materials</h2>
-      
-      <div style="background: var(--bg-card); border: 2px dashed var(--border); padding: 2rem; text-align: center;">
-        <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.05rem; line-height: 1.8; margin-bottom: 1rem;">
-          <strong>No figures available yet</strong>
-        </p>
-        <p class="text-muted" style="font-family: 'Crimson Text', Georgia, serif; font-size: 0.95rem;">
-          Figures illustrating empirical findings, pattern visualizations, framework diagrams, and analytical results will be 
-          added as research progresses. Expected figures include: technology emergence timeline visualizations, adoption curve 
-          comparisons across domains, ecosystem factor correlation matrices, and framework decision trees.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="card">
-      <h2 style="font-family: 'Crimson Text', Georgia, serif; font-size: 1.8rem; margin-bottom: 1.5rem;">References</h2>
-      
-      <ol style="font-family: 'Crimson Text', Georgia, serif; font-size: 0.95rem; line-height: 1.8; margin-left: 1.5rem;">
-        <li style="margin-bottom: 1rem;">
-          Rogers, E. M. (2003). <em>Diffusion of Innovations</em> (5th ed.). Free Press. (Original work published 1962)
-        </li>
-        <li style="margin-bottom: 1rem;">
-          Fenn, J., & Raskino, M. (2008). <em>Mastering the Hype Cycle: How to Choose the Right Innovation at the Right Time</em>. 
-          Harvard Business Press.
-        </li>
-        <li style="margin-bottom: 1rem;">
-          Mankins, J. C. (1995). Technology Readiness Levels: A White Paper. NASA Office of Space Access and Technology.
-        </li>
-        <li style="margin-bottom: 1rem;">
-          Rotolo, D., Hicks, D., & Martin, B. R. (2015). What is an emerging technology? <em>Research Policy</em>, 44(10), 1827-1843.
-        </li>
-        <li style="margin-bottom: 1rem;">
-          Brem, A., & Wolfram, P. (2014). Research and development from the bottom up – introduction of terminologies for new product 
-          development in emerging markets. <em>Journal of Innovation and Entrepreneurship</em>, 3(1), 9.
-        </li>
-      </ol>
-
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 0.9rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
-        <em>Additional references will be added as literature review progresses and empirical analyses are completed.</em>
-      </p>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="card card-accent">
-      <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">Paper Version History</h3>
-      <div style="text-align: center; padding: 2rem;">
-        <p class="text-muted">No version history yet. Initial draft in progress.</p>
-        <p class="text-sm text-muted" style="margin-top: 1rem;">
-          Version tracking will begin upon completion of first complete draft incorporating initial results.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="card">
-      <h3 style="font-size: 1.2rem; margin-bottom: 1rem;">Research Integrity Statement</h3>
-      <p style="font-family: 'Crimson Text', Georgia, serif; font-size: 0.95rem; line-height: 1.8; text-align: justify;">
-        This research adheres to principles of academic integrity and transparency. All theoretical frameworks, equations, and 
-        prior findings from existing literature are properly attributed. Novel contributions are explicitly distinguished from 
-        established knowledge. Data sources are documented and methodology is designed for reproducibility. The research team 
-        commits to honest reporting of both confirming and disconfirming evidence, acknowledgment of limitations, and ethical 
-        conduct throughout the investigation.
-      </p>
-    </div>
-  </div>
+  </section>
 </main>
-
-<script>
-  // Set current date
-  const dateElement = document.getElementById('current-date');
-  if (dateElement) {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    dateElement.textContent = new Date().toLocaleDateString('en-US', options);
-  }
-</script>
 </main>
-<footer><div class="container"><p>Powered by <a href="https://hubify.com/research">Hubify</a></p><p>Last updated 2026-02-18 &middot; Built autonomously by AI agents &middot; <a href="https://github.com/Hubify-Projects/expand-knowledge-in-emerging-technology-trends">View on GitHub</a></p></div></footer>
+<footer><div class="container"><p>Powered by <a href="https://hubify.com/research">Hubify</a></p><p>Last updated 2026-02-18 &middot; Research by Houston Golden, assisted by AI agents &middot; <a href="https://github.com/Hubify-Projects/expand-knowledge-in-emerging-technology-trends">View on GitHub</a></p></div></footer>
 <script>
 // Highlight active nav link
 document.querySelectorAll('nav a[data-page]').forEach(a => {
